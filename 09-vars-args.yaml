@@ -2,7 +2,7 @@
   hosts: localhosts
   tasks:
   - name: values from args
-    ansibile.builtin.debug:
+    ansible.builtin.debug:
      msg: "hi my name is {{name}} and good {{wishes}} to everyone"
 
     #instead of passing the variables form  the file we can directly pass it through the command line using -e
