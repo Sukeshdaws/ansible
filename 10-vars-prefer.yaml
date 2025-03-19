@@ -1,7 +1,7 @@
 - name: Variable prefrence
   hosts: localhost
-  vars:
-   wishes: morning from play variable
+  # vars:
+  #  wishes: morning from play variable
   # vars_files:
   # - vars.yaml
   # vars_prompt:
@@ -20,3 +20,4 @@
       #2.task variable
       #3.file variable
       #4.prompt
+      #5.play variable
