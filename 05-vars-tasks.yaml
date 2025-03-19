@@ -1,5 +1,5 @@
 - name: variables
-  hosts: local host
+  hosts: localhost
   vars:
    course: "devops"
    duration: "120hrs"
