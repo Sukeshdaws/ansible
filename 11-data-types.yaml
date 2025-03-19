@@ -10,7 +10,7 @@
     DevOps: 2
     AWS: 1
     Docker: 1
-   RealProject:true #boolean 
+   RealProject: true #boolean 
 
   tasks:
   - name: print variables
