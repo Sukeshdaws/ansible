@@ -14,3 +14,8 @@
     #  wishes: "morning from task variable"
     ansible.builtin.debug:
       msg: "hello,good {{wishes}}"
+
+
+      #1.arguments
+      #2.task variable
+      #3.file variable
