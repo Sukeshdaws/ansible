@@ -53,6 +53,6 @@
     ansible.builtin.debug:
      msg: "befor converting: {{ my_dict }}"
 
-- name: after converting
-  ansible.builtin.dict2items:
-   msg: "after converting to items: {{ my_dict | dict2items }}"     
+  - name: after converting
+    ansible.builtin.debug:
+     msg: "after converting to items: {{ my_dict | dict2items }}"     
