@@ -1,5 +1,6 @@
 - name: Remove Packages
   hosts: localhost
+  become: yes
   tasks:
   - name: remove some packages
     ansible.builtin.dnf:
