@@ -60,15 +60,15 @@
 - name: converting items in to dictionary
   hosts: localhost
   vars:
-   my_dict:  #this is called dictionary or map or key/value pairs
-    course: devops
-    trainer: self
-    duration: 120hrs
+   my_list:
+   - {'key': 'course', 'value': 'devops'}
+   - {'key': 'trainer', 'value': 'self'}
+   - {'key': 'duration', 'value': '120hrs'}
   tasks:
   - name: befor converting
     ansible.builtin.debug:
-     msg: "befor converting: {{ my_dict }}"
+     msg: "befor converting: {{ my_list }}"
 
   - name: after converting
     ansible.builtin.debug:
-     msg: "after converting to items: {{ my_dict | items2dict }}"
+     msg: "after converting to items: {{ my_list | items2dict }}"
