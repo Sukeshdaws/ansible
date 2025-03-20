@@ -48,7 +48,7 @@
     course: devops
     trainer: self
     duration: 120hrs
-  taks:
+  tasks:
   - name: befor converting
     ansible.builtin.debug:
      msg: "befor converting {{my_dict}}"
