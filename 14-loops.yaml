@@ -4,8 +4,8 @@
   - name: Print the names
     ansible.builtin.debug:
      msg: "Hello: {{items}}"
-  loop:
-  - linux
-  - shell
-  - ansible
-  - terraform
+    loop:
+    - linux
+    - shell
+    - ansible
+    - terraform
