@@ -39,4 +39,20 @@
     vars:
      ages: [25, 35, 22, 72, 92, 82]
     ansible.builtin.debug:
-     msg: min age is {{ages | min }} and max {{ages | max}} 
+     msg: min age is {{ages | min }} and max {{ages | max}}
+
+- name: converting dictionary or maps in to items/list
+  hosts: localhost
+  vars:
+   my_dict:
+    course: devops
+    trainer: self
+    duration: 120hrs
+  taks:
+  - name: befor converting
+    ansible.builtin.debug:
+     msg: "befor converting {{my_dict}}"
+
+- name: after converting
+  ansible.builtin.debug:
+   msg: "after converting to items {{my_dict | dict2items}}"     
