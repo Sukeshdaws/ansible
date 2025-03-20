@@ -13,3 +13,12 @@
   - name: upper case
     ansible.builtin.debug:
      msg: "{{wishes | upper}}"
+
+- name: upper case letters
+  hosts: localhost
+  vars:
+   wishes: "HELLO GOOD MORNING THIS IS SUKESH"
+  tasks:
+  - name: upper case
+    ansible.builtin.debug:
+     msg: "{{ wishes | lower }}"     
