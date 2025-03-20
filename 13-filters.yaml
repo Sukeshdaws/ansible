@@ -4,3 +4,12 @@
   - name: print default value
     ansible.builtin.debug:
      msg: "The course iam learing is {{course | default ('ansible')}} "
+
+- name: upper case letters
+  hosts: localhost
+  vars:
+   wishes: "hello good morning this is sukesh"
+  tasks:
+  - name: upper case
+    ansible.builtin.debug:
+     msg: "{{wishes | upper}}"
